@@ -1,17 +1,20 @@
-""" function option1(): 
-        return 100*10
-    
-    function option2(): 
-        x = sum of 2^0 to 2^9
-        return x
-    
-    function main():
-        if option1() is equal to option2():
-            print option1 and option 2 pays the same..
-        
-        else if option1() greater than option2(): 
-            print option1 is better
+def option1(): 
+    x = 100 * 10
+    return x
 
-        else :
-            print option 2 is better
-"""
+def option2(): 
+    x =  (2**0 + 2**1 + 2**2 + 2**3 + 2**4 + 2**5 + 2**6 + 2**7 + 2**8 + 2**9)
+    return x
+
+def main():
+
+    if option1() == option2():
+        print('Option 1  and Option 2 pays the same')
+
+    elif option1() > option2(): 
+        print('Option 1 is better')     
+
+    elif option1() < option2() :
+        print('Option 2 is better')
+
+main()
